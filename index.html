@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Proyecto Web v3</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="row clearfix logo-menu">
+
+            <div class="col-xs-12 col-sm-3 centrarImg">
+                <img src="img/logo.png" alt="Logo JODA" width="80px" height="80px">
+            </div>
+
+            <div class="col-xs-12 col-sm-3 ajustarIcon hidden-xs">
+                <i class="glyphicon glyphicon-earphone"></i>
+                <div class="textoIcon">
+                    <p>
+                        +56 9 99887766
+                        <br> JyD-Future@gmail.com
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 ajustarIcon hidden-xs">
+                <i class="glyphicon glyphicon-map-marker"></i>
+                <div class="textoIcon">
+                    <p>
+                        <a href="https://www.google.cl/maps/place/Lusitania+666,+Vi%C3%B1a+del+Mar,+Regi%C3%B3n+de+Valpara%C3%ADso/@-33.0265286,-71.5313664,17z/data=!3m1!4b1!4m5!3m4!1s0x9689de7c21f3fc21:0x2a3abc99a1f6484b!8m2!3d-33.0265331!4d-71.5291777" target="_blank">Lusitania #666</a>
+                        <br> Viña del Mar
+                    </p>
+
+
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 ajustarIcon hidden-xs">
+                <i class="glyphicon glyphicon-time"></i>
+                <div class="textoIcon">
+                    <p>
+                        Lunes a Viernes
+                        <br> 9:30 a 14:00 hrs
+                        <br> 15:00 a 19:00 hrs
+                    </p>
+
+                </div>
+            </div>
+
+        </header>
+
+
+        <section class="row clearfix">
+            <div class="menu col-xs-12">
+                <input type="checkbox" id="btn_menu">
+                <label for="btn_menu">
+                        <i class="fas fa-bars" id="bars"></i>                    
+                    </label>
+                <nav class="sub_menu">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Casas</a></li>
+                        <li><a href="#">Departamentos</a></li>
+                        <li><a href="#">Terrenos</a></li>
+                        <li><a href="#">Arriendos</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="row clearfix center-xs ">
+
+            <div class="col-xs-12 foto">
+                <div id="carousel-1" class="carousel slide slide-style" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-1" data-slide-to="1"></li>
+                        <li data-target="#carousel-1" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="item active">
+                            <img src="img/2a.jpg" class="img-responsive" alt="1" height="200px">
+                            <div class="carousel-caption">
+                                <h3>Slide #1</h3>
+                                <p>Lorem ipsum dolor sit.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="img/3a.jpg" class="img-responsive" alt="2">
+                            <div class="carousel-caption">
+                                <h3>Slide #2</h3>
+                                <p>Lorem ipsum dolor sit.</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="img/4a.jpg" class="img-responsive" alt="3">
+                            <div class="carousel-caption">
+                                <h3>Slide #3</h3>
+                                <p>Lorem ipsum dolor sit.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+
+                    <a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bordes">
+                <div class="contenido col-xs-12 col-sm-8 ">
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
+                    </p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
+                    </p>
+
+                </div>
+
+                <div class="foto  col-xs-12  col-sm-4">
+                    <img src="img/depto1.jpg" alt="Foto 1" width="200px" height="200px">
+                </div>
+
+            </div>
+
+
+            <div class="bordes">
+                <div class="contenido col-xs-12 col-sm-8 ">
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
+                    </p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
+                    </p>
+
+                </div>
+
+                <div class="foto  col-xs-12  col-sm-4">
+                    <img src="img/depto2.jpg" alt="Foto 1" width="200px" height="200px">
+                </div>
+
+            </div>
+
+            <div class="bordes">
+                <div class="contenido col-xs-12 col-sm-8 ">
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
+                    </p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
+                    </p>
+
+                </div>
+
+                <div class="foto  col-xs-12  col-sm-4">
+                    <img src="img/depto1.jpg" alt="Foto 1" width="200px" height="200px">
+                </div>
+
+
+            </div>
+
+            <div class="bordes">
+                <div class="contenido col-xs-12 col-sm-8 ">
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
+                    </p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
+                    </p>
+
+                </div>
+
+                <div class="foto  col-xs-12  col-sm-4">
+                    <img src="img/depto2.jpg" alt="Foto 1" width="200px" height="200px">
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <footer class="row middle-xs between-xs ">
+
+            <div class="col-xs-12 col-sm-4 ">
+                <div class="nav ">
+                    <a href="# ">Inicio</a>
+                    <a href="# ">Trabajos</a>
+                    <a href="# ">Contacto</a>
+                    <a href="# ">Nosotros</a>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 logo-foot">
+                <img src="img/logo.png" alt="Logo JODA">
+            </div>
+
+        </footer>
+
+    </div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
