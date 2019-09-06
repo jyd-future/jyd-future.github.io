@@ -87,12 +87,20 @@
     }
     
     footer .nav a {
-        width: 100%;
         display: block;
+        width: 100%;
         padding: 20px;
         color: #dfd9d9;
         text-decoration: none;
         border-bottom: 1px solid #393e46;
+    }
+    
+    .rrss a {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-decoration: none;
+        color: #dfd9d9;
     }
     
     footer .nav a:hover {
@@ -103,9 +111,12 @@
         display: flex;
         justify-content: center;
         color: #dfd9d9;
-        width: 300px;
-        height: 300px;
         padding: 10px;
+    }
+    
+    .logo-pxx {
+        width: 200px;
+        height: 200px;
     }
     /* ---------------------------------------------- */
     
@@ -168,8 +179,6 @@
     }
     
     .sub_menu li a:hover {
-        /* border-bottom: 4px solid #dfd9d9;
-    padding-bottom: 6px; */
         background: #380909;
     }
     
