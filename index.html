@@ -18,35 +18,23 @@
 </head>
 
 <body>
-    <div class="con-tenedor">
+    <!-- HEADER -->
+    <div class="co">
         <header class="row clearfix logo-menu">
 
-            <div class="col-xs-12 col-sm-3 centrarImg">
+            <div class="col-xs-4  centrarImg">
                 <a href="index.html"> <img src="img/logo.png" alt="Logo" width="80px" height="80px"> </a>
             </div>
-
-            <div class="col-xs-12 col-sm-3 ajustarIcon hidden-xs">
-                <i class="glyphicon glyphicon-earphone"></i>
-                <div class="textoIcon">
-                    <p>
-                        +56 9 99887766
-                        <br> JyD-Future@gmail.com
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-3 ajustarIcon hidden-xs">
+            <div class="col-xs-4  ajustarIcon">
                 <i class="glyphicon glyphicon-map-marker"></i>
                 <div class="textoIcon">
                     <p>
                         <a href="https://www.google.cl/maps/place/Lusitania+666,+Vi%C3%B1a+del+Mar,+Regi%C3%B3n+de+Valpara%C3%ADso/@-33.0265286,-71.5313664,17z/data=!3m1!4b1!4m5!3m4!1s0x9689de7c21f3fc21:0x2a3abc99a1f6484b!8m2!3d-33.0265331!4d-71.5291777" target="_blank">Lusitania #666</a>
                         <br> Viña del Mar
                     </p>
-
-
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-3 ajustarIcon hidden-xs">
+            <div class="col-xs-4 ajustarIcon ">
                 <i class="glyphicon glyphicon-time"></i>
                 <div class="textoIcon">
                     <p>
@@ -61,15 +49,20 @@
         </header>
 
 
+        <!-- MENU -->
         <section class="row clearfix">
             <div class="menu col-xs-12">
                 <input type="checkbox" id="btn_menu">
-                <label for="btn_menu">
+                <label for="btn_menu">     
                         <i class="fas fa-bars" id="bars"></i>                    
+                        <p id="title_menu">Menu</p>
                     </label>
-                <nav class="sub_menu">
-                    <ul>
+                <div>
+                </div>
 
+                <nav class="sub_menu">
+
+                    <ul>
                         <li><a href="casas.html">Casas</a></li>
                         <li><a href="#">Departamentos</a></li>
                         <li><a href="#">Terrenos</a></li>
@@ -80,9 +73,10 @@
             </div>
         </section>
 
-        <section class="row clearfix center-xs">
 
-            <div class="col-xs-12 foto">
+        <!-- CAROUSEL -->
+        <section class="row clearfix">
+            <div class="col-xs-12">
                 <div id="carousel-1" class="carousel slide slide-style" data-ride="carousel">
 
                     <ol class="carousel-indicators">
@@ -131,92 +125,75 @@
                 </div>
             </div>
 
-            <div class="bordes">
-                <div class="contenido col-xs-12 col-sm-8 ">
+        </section>
 
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
-                    </p>
-                    <br>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
-                    </p>
+        <!-- CONTENIDO -->
+        <section class="main">
+            <div class="row clearfix">
+                <section class="col-md-9">
 
-                </div>
+                    <article class="post clearfix">
+                        <a href="#" class="thumb pull-left">
+                            <img class="img-thumbnail" src="img/depto2.jpg" alt="">
+                        </a>
+                        <h2 class="post-title">
+                            <a href="#">Casas #1</a>
+                        </h2>
+                        <p class="post-contenido text-justify">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto ipsam amet temporibus iste odio deleniti dolores reiciendis repellat. Doloribus, incidunt ex aliquid quae quibusdam blanditiis. Enim nam quibusdam quis non?
+                        </p>
+                        <div class="contenedor-botones">
+                            <a href="#" class="btn btn-primary">Ver más</a>
+                            <a href="#" class="btn btn-success">Comprar <span class="badge">$2.000.000</span></a>
+                        </div>
+                    </article>
 
-                <div class="foto  col-xs-12  col-sm-4">
-                    <img src="img/depto1.jpg" alt="Foto 1" width="200px" height="200px">
-                </div>
+                    <article class="post clearfix">
+                        <a href="#" class="thumb pull-left">
+                            <img class="img-thumbnail" src="img/depto2.jpg" alt="">
+                        </a>
+                        <h2 class="post-title">
+                            <a href="#">Casas #2</a>
+                        </h2>
+                        <p class="post-contenido text-justify">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto ipsam amet temporibus iste odio deleniti dolores reiciendis repellat. Doloribus, incidunt ex aliquid quae quibusdam blanditiis. Enim nam quibusdam quis non?
+                        </p>
+                        <div class="contenedor-botones">
+                            <a href="#" class="btn btn-primary">Ver más</a>
+                            <a href="#" class="btn btn-success">Comprar <span class="badge">$2.000.000</span></a>
+                        </div>
+                    </article>
 
-            </div>
+                    <article class="post clearfix">
+                        <a href="#" class="thumb pull-left">
+                            <img class="img-thumbnail" src="img/depto2.jpg" alt="">
+                        </a>
+                        <h2 class="post-title">
+                            <a href="#">Casas #3</a>
+                        </h2>
+                        <p class="post-contenido text-justify">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto ipsam amet temporibus iste odio deleniti dolores reiciendis repellat. Doloribus, incidunt ex aliquid quae quibusdam blanditiis. Enim nam quibusdam quis non?
+                        </p>
+                        <div class="contenedor-botones">
+                            <a href="#" class="btn btn-primary">Ver más</a>
+                            <a href="#" class="btn btn-success">Comprar <span class="badge">$2.000.000</span></a>
+                        </div>
+                    </article>
 
-
-            <div class="bordes">
-                <div class="contenido col-xs-12 col-sm-8 ">
-
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
-                    </p>
-                    <br>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
-                    </p>
-
-                </div>
-
-                <div class="foto  col-xs-12  col-sm-4">
-                    <img src="img/depto2.jpg" alt="Foto 1" width="200px" height="200px">
-                </div>
-
-            </div>
-
-            <div class="bordes">
-                <div class="contenido col-xs-12 col-sm-8 ">
-
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
-                    </p>
-                    <br>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
-                    </p>
-
-                </div>
-
-                <div class="foto  col-xs-12  col-sm-4">
-                    <img src="img/depto1.jpg" alt="Foto 1" width="200px" height="200px">
-                </div>
-
-
-            </div>
-
-            <div class="bordes">
-                <div class="contenido col-xs-12 col-sm-8 ">
-
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
-                    </p>
-                    <br>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error natus cupiditate sit quo rem recusandae debitis laborum eaque ipsa facilis tenetur optio odio, quis nemo, soluta, commodi odit aspernatur. Delectus?
-                    </p>
-
-                </div>
-
-                <div class="foto  col-xs-12  col-sm-4">
-                    <img src="img/depto2.jpg" alt="Foto 1" width="200px" height="200px">
-                </div>
+                </section>
 
             </div>
-
 
         </section>
 
 
+
+        <!-- FOOTER -->
         <footer class="row middle-xs between-xs ">
 
-            <div class="col-xs-12 col-sm-4">
-                <div class="nav">
+            <!-- OPCIONES FOOTER -->
+            <div class="col-xs-12 col-sm-4 ">
+                <div class="nav ">
 
                     <a href="# ">Trabajos</a>
                     <a href="# ">Contacto</a>
@@ -224,32 +201,29 @@
                 </div>
             </div>
 
+            <!-- RRSS -->
             <div class="col-xs-12 col-sm-4 ">
-                <div class="rrss">
-                    <div class=" ajustarIcon ">
-                        <i class="fab fa-instagram"></i>
-                        <a href="http://www.instagram.com" target="_blank">Instagram</a>
+                <div class="con_rrss around-xs">
+                    <div class=" centrarImg ">
+                        <a href="http://www.instagram.com" target="_blank"><img class="rrss" src="img/instagram.png" alt="Instagram"></a>
                     </div>
-                    <div class="ajustarIcon">
-                        <i class="fab fa-facebook-square"></i>
-                        <a href="#">Facebook</a>
+                    <div class="centrarImg ">
+                        <a href="https://www.facebook.com" target="_blank"><img class="rrss" src="img/facebook.png" alt="Facebook"></a>
                     </div>
-                    <div class="ajustarIcon">
-                        <i class="fas fa-at"></i>
-                        <a href="mailto:danieldejesusgs@gmail.com">Correo</a>
-                    </div>
-                    <div class="ajustarIcon">
-                        <i class="fab fa-whatsapp"></i>
-                        <a href="tel:+56973014444">Whatsapp</a>
-                    </div>
+                    <div class="centrarImg ">
 
+                        <a href="mailto:jyd-future@gmail.com"><img class="rrss" src="img/arroba.png" alt="Correo"></a>
+                    </div>
+                    <div class="centrarImg ">
+                        <a href="tel:+56977665544"><img class="rrss" src="img/whatsapp.png" alt="Whatsapp"></a>
+                    </div>
                 </div>
             </div>
 
+            <!-- LOGO FOOTER -->
             <div class="col-xs-12 col-sm-4 logo-foot">
                 <a href="#"> <img src="img/logo.png" alt="Logo" class="logo-pxx"></a>
             </div>
-
 
 
         </footer>

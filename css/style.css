@@ -27,21 +27,29 @@
     }
     
     .bordes {
+        /* width: 70%; */
         border-radius: 10px;
         box-shadow: 3px 3px 10px #393e46;
-        margin: 15px;
+        margin: 15px 30px;
     }
     
     .contenido {
-        width: 100%;
         margin: 10px 0;
         padding: 20px;
         text-align: justify;
     }
     
     .foto {
-        vertical-align: top;
+        /* vertical-align: top; */
         margin: 20px 0;
+        width: 200px;
+        height: 200px;
+    }
+    
+    aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     @import url('https://fonts.googleapis.com/css?family=Chilanka');
@@ -59,7 +67,7 @@
     .ajustarIcon {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
     .ajustarIcon a {
@@ -95,12 +103,15 @@
         border-bottom: 1px solid #393e46;
     }
     
-    .rrss a {
-        display: block;
-        width: 100%;
+    .rrss {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .con_rrss {
+        display: flex;
+        margin: 10px 10px 10px 70px;
         padding: 20px;
-        text-decoration: none;
-        color: #dfd9d9;
     }
     
     footer .nav a:hover {
@@ -123,8 +134,7 @@
     html {
         scroll-behavior: smooth;
     }
-    
-    .scrollup {
+    /* .scrollup {
         position: fixed;
         width: 50px;
         height: 50px;
@@ -136,7 +146,7 @@
         line-height: 50px;
         color: white;
         font-size: 22px;
-    }
+    } */
     /* ---------------------------------------------- */
     
     .menu {
@@ -165,9 +175,7 @@
     }
     
     .sub_menu {
-        background: #850d0d;
-        font-size: 1.5rem;
-        z-index: 100;
+        z-index: 200;
     }
     
     .sub_menu ul {
@@ -179,25 +187,39 @@
     }
     
     .sub_menu li a:hover {
-        background: #380909;
+        color: #ffffff;
     }
     
     .sub_menu li a {
         display: block;
-        padding: 10px 20px;
-        color: #f1f0cf;
+        padding: 10px 30px;
+        color: #cabebe;
         text-decoration: none;
     }
     
-    @media only screen and (max-width:670px) {
+    @media only screen and (max-width:550px) {
+        .textoIcon {
+            font-size: 1.2rem;
+            margin-top: 17px;
+        }
         .menu label {
             display: block;
+            width: 100%;
+        }
+        #title_menu {
+            display: flex;
+            justify-content: center;
+            transform: translateY(-95%);
+            margin: 0;
+            padding: 0;
+            color: #dfd9d9;
         }
         .sub_menu {
             position: absolute;
             background: #850d0d;
-            width: 97.5%;
+            width: 100%;
             transform: translateX(-110%);
+            transition: all 0.5s;
         }
         .sub_menu ul {
             flex-direction: column;
@@ -206,6 +228,43 @@
             border-top: 1px solid #f1f0cf;
         }
         #btn_menu:checked~.sub_menu {
-            transform: translateX(0);
+            transform: translateX(-1%);
         }
+        footer .nav a {
+            text-align: center;
+        }
+        .con_rrss {
+            margin-right: 80px;
+        }
+    }
+    /* Post */
+    
+    .main {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .post {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #5d5e5f;
+    }
+    
+    .post .post-title a {
+        color: #333;
+    }
+    
+    .post .thumb {
+        margin-right: 10px;
+        width: 40%;
+    }
+    
+    .post .thumb img {
+        width: 100%;
+    }
+    
+    .post .contenedor-botones {
+        width: 100%;
     }
