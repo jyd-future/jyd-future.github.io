@@ -78,7 +78,7 @@
 
 
     <!-- CAROUSEL -->
-    <section class="row ">
+    <!-- <section class="row ">
         <div class="col-xs-12">
             <div id="carousel-1" class="carousel slide slide-style" data-ride="carousel">
 
@@ -128,64 +128,26 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
+
+
 
     <!-- CONTENIDO -->
     <section class="main">
-
-        <h1 class="center-xs">Destacados</h1>
-        <div class="row">
+        <div class="row formulario">
 
             <section class="col-md-9">
 
-                <article class="post clearfix">
-                    <a href="#" class="thumb pull-left">
-                        <img class="img-thumbnail" src="img/depto2.jpg" alt="">
-                    </a>
-                    <h2 class="post-title">
-                        <a href="#">Casas #1</a>
-                    </h2>
-                    <p class="post-contenido text-justify">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto ipsam amet temporibus iste odio deleniti dolores reiciendis repellat. Doloribus, incidunt ex aliquid quae quibusdam blanditiis. Enim nam quibusdam quis non?
-                    </p>
-                    <div class="contenedor-botones">
-                        <a href="#" class="btn btn-primary">Ver más</a>
-                        <a href="#" class="btn btn-success">Comprar <span class="badge">$2.000.000</span></a>
+                <form action="" method="post" onsubmit="return validarForm(this);">
+                    <div id="tit_form">
+                        <h1>Formulario de Contacto</h1>
                     </div>
-                </article>
-
-                <article class="post clearfix">
-                    <a href="#" class="thumb pull-left">
-                        <img class="img-thumbnail" src="img/depto2.jpg" alt="">
-                    </a>
-                    <h2 class="post-title">
-                        <a href="#">Casas #2</a>
-                    </h2>
-                    <p class="post-contenido text-justify">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto ipsam amet temporibus iste odio deleniti dolores reiciendis repellat. Doloribus, incidunt ex aliquid quae quibusdam blanditiis. Enim nam quibusdam quis non?
-                    </p>
-                    <div class="contenedor-botones">
-                        <a href="#" class="btn btn-primary">Ver más</a>
-                        <a href="#" class="btn btn-success">Comprar <span class="badge">$2.000.000</span></a>
-                    </div>
-                </article>
-
-                <article class="post clearfix">
-                    <a href="#" class="thumb pull-left">
-                        <img class="img-thumbnail" src="img/depto2.jpg" alt="">
-                    </a>
-                    <h2 class="post-title">
-                        <a href="#">Casas #3</a>
-                    </h2>
-                    <p class="post-contenido text-justify">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto ipsam amet temporibus iste odio deleniti dolores reiciendis repellat. Doloribus, incidunt ex aliquid quae quibusdam blanditiis. Enim nam quibusdam quis non?
-                    </p>
-                    <div class="contenedor-botones">
-                        <a href="#" class="btn btn-primary">Ver más</a>
-                        <a href="#" class="btn btn-success">Comprar <span class="badge">$2.000.000</span></a>
-                    </div>
-                </article>
-
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese Nombre">
+                    <input type="text" id="mail" name="correo" placeholder="Ingrese Correo">
+                    <input type="tel" id="fono" name="fono" placeholder="Ingrese Telefono">
+                    <textarea name="mensaje" id="mensaje" placeholder="Escriba su Mensaje" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Enviar" id="enviar">
+                </form>
             </section>
 
             <!-- ASIDE -->

@@ -12,8 +12,8 @@
     }
     
     .logo-menu {
-        background: #161616;
-        color: #dfd9d9;
+        width: 70%;
+        height: 70%;
     }
     
     .slide-style {
@@ -23,13 +23,13 @@
     @import url('https://fonts.googleapis.com/css?family=Chilanka');
     header {
         background-color: #161616;
+        color: #dfd9d9;
     }
     
     .centrarImg {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin: 10px 0;
     }
     
     .ajustarIcon {
@@ -72,13 +72,13 @@
     }
     
     .rrss {
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
     }
     
     .con_rrss {
         display: flex;
-        margin: 10px 10px 10px 70px;
+        margin: 10px 10px 10px 10px;
         padding: 20px;
     }
     
@@ -139,7 +139,6 @@
     
     .menu label:hover {
         cursor: pointer;
-        /* background: rgb(0, 0, 0, 0.3); */
     }
     
     .sub_menu {
@@ -235,7 +234,6 @@
     }
     
     .post-contenido {
-        /* margin-right: 10px; */
         padding-right: 10px;
     }
     
@@ -250,4 +248,59 @@
     .foto {
         width: 100%;
         margin-bottom: 5px;
+    }
+    /*Formulario*/
+    
+    .formulario {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    form {
+        width: 450px;
+        margin: auto;
+        background: #3c70a4;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+    #tit_form {
+        text-align: center;
+        color: #dfd9d9;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #dfd9d9;
+    }
+    
+    #tit_form h1 {
+        /* background: #ec9b3b; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+    }
+    
+    textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    
+    #enviar {
+        background: #d6e4aa;
+        padding: 20px;
+    }
+    
+    #enviar:hover {
+        cursor: pointer;
+        background: #64b2cd;
     }
