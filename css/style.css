@@ -262,7 +262,7 @@
         background: #3c70a4;
         padding: 10px 20px;
         box-sizing: border-box;
-        border-radius: 10px;
+        /* border-radius: 10px; */
     }
     
     #tit_form {
