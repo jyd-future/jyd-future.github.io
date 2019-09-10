@@ -4,7 +4,7 @@ function validarNombre() {
     var txtNombre = document.getElementById("nombre");
 
     if (nombre == null || nombre.length == 0 || /^\s+$/.test(nombre)) {
-        alert('ERROR: El campo nombre no debe ir vacío o lleno de solamente espacios en blanco');
+        alert('ERROR: El campo nombre no puede estar vacio');
         txtNombre.classList.add('error');
         txtNombre.classList.remove('exito');
 
@@ -37,7 +37,7 @@ function validarTelefono() {
     var txtTelefono = document.getElementById("telefono");
 
     if (telefono == null || telefono.length == 0 || isNaN(telefono)) {
-        alert('ERROR: Debe escribir un numero de Telefono');
+        alert('ERROR: Debe ingresar un número de teléfono válido');
         txtTelefono.classList.add('error');
         txtTelefono.classList.remove('exito');
 
@@ -53,7 +53,7 @@ function validarMensaje() {
     var txtMensaje = document.getElementById("mensaje");
 
     if (mensaje == null || mensaje.length == 0) {
-        alert('ERROR: Ingrese mensaje que desea enviar');
+        alert('ERROR: Debe escribir algún mensaje');
         txtMensaje.classList.add('error');
         txtMensaje.classList.remove('exito');
 

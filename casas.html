@@ -68,11 +68,10 @@
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="#">¿Quienes somos?</a></li>
-                    <li><a href="contacto.html">Contactanos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                     <li class="hidden-lg hidden-md hidden-sm"><a href="casas.html">Casas</a></li>
                     <li class="hidden-lg hidden-md hidden-sm"><a href="departamento.html">Departamentos</a></li>
                     <li class="hidden-lg hidden-md hidden-sm"><a href="terrenos.html">Terrenos</a></li>
-                    <li class="hidden-lg hidden-md hidden-sm"><a href="arriendos.html">Arriendos</a></li>
                     <li><a href="galeria.html">Galeria</a></li>
 
                 </ul>
@@ -100,7 +99,7 @@
                     </p>
                     <div class="contenedor-botones">
                         <a href="#" class="btn btn-primary">Ver más</a>
-                        <a href="#" class="btn btn-success">Comprar <span class="badge">$2.000.000</span></a>
+                        <a href="#" class="btn btn-success">Arrendar <span class="badge" id="uf-casa-1"></span></a>
                     </div>
                 </article>
 
@@ -117,7 +116,7 @@
                     </p>
                     <div class="contenedor-botones">
                         <a href="#" class="btn btn-primary">Ver más</a>
-                        <a href="#" class="btn btn-success">Comprar <span class="badge">$2.000.000</span></a>
+                        <a href="#" class="btn btn-success">Arrendar <span class="badge" id="uf-casa-2"></span></a>
                     </div>
                 </article>
 
@@ -137,7 +136,7 @@
                     </p>
                     <div class="contenedor-botones">
                         <a href="#" class="btn btn-primary">Ver más</a>
-                        <a href="#" class="btn btn-success">Comprar <span class="badge">$2.000.000</span></a>
+                        <a href="#" class="btn btn-success">Arrendar <span class="badge" id="uf-casa-3"></span></a>
                     </div>
                 </article>
 
@@ -150,14 +149,15 @@
                     <a href="casas.html" class="list-group-item">Casas</a>
                     <a href="departamento.html" class="list-group-item ">Departamentos</a>
                     <a href="terrenos.html" class="list-group-item ">Terrenos</a>
-                    <a href="arriendos.html" class="list-group-item ">Arriendos</a>
 
                 </div>
 
-                <h3>Ultimos Proyectos</h3>
-                <img class="foto img-thumbnail" src="img/logo.jpg" alt="Foto Aside">
+                <h3>Nuevos Proyectos:</h3>
+                <img class="foto img-thumbnail" src="img/proyect1.jpg" alt="Foto Aside">
                 <br>
-                <img class="foto img-thumbnail" src="img/depto1.jpg" alt="Foto Aside #2">
+                <img class="foto img-thumbnail" src="img/proyect2.jpg" alt="Foto Aside #2">
+                <br>
+                <img class="foto img-thumbnail" src="img/proyect3.jpg" alt="Foto Aside #3">
             </aside>
 
         </div>
@@ -171,11 +171,15 @@
 
         <!-- OPCIONES FOOTER -->
         <div class="col-xs-12 col-sm-4 ">
-            <div class="nav">
-
-                <a href="# ">Trabajos</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="# ">Nosotros</a>
+            <div class="indicator center-xs">
+                <h3>Indicadores Económicos</h3>
+                <span id="uf"></span>
+                <br>
+                <br>
+                <span id="dolar"></span>
+                <br>
+                <br>
+                <span id="utm"></span>
             </div>
         </div>
 
@@ -206,10 +210,11 @@
         <a href="#subir-al-cielo" class="up scrollup">
             <i class="fas fa-arrow-up"></i>
         </a>
-        <script src="js/subir-al-cielo.js"></script>
+
 
     </footer>
-
+    <script src="js/subir-al-cielo.js"></script>
+    <script src="js/uf.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>

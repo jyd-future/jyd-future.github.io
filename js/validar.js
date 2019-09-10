@@ -12,7 +12,7 @@ function validarFormulario() {
 
     //validar nombre
     if (nombre == null || nombre.length == 0 || /^\s+$/.test(nombre)) {
-        alert('ERROR: El campo nombre no debe ir vacío o lleno de solamente espacios en blanco');
+        alert('ERROR: El campo nombre no puede estar vacio');
         txtNombre.classList.add('error');
         txtNombre.classList.remove('exito');
         return false;
@@ -37,7 +37,7 @@ function validarFormulario() {
 
     //validar telefono
     if (telefono == null || telefono.length == 0 || isNaN(telefono)) {
-        alert('ERROR: Debe escribir un numero de Telefono');
+        alert('ERROR:  Debe ingresar un número de teléfono válido');
         txtTelefono.classList.add('error');
         txtTelefono.classList.remove('exito');
         return false;
@@ -49,7 +49,7 @@ function validarFormulario() {
 
     //validar mensaje
     if (mensaje == null || mensaje.length == 0) {
-        alert('ERROR: Ingrese mensaje que desea enviar');
+        alert('ERROR: Debe escribir algún mensaje');
         txtMensaje.classList.add('error');
         txtMensaje.classList.remove('exito');
         return false;
@@ -59,7 +59,7 @@ function validarFormulario() {
         txtMensaje.classList.add('exito');
     }
 
-    alert('CORRECTO: Enviando Formulario de Contacto...');
-    return true;
+    // alert('CORRECTO: Enviando Formulario de Contacto...');
+    // return true;
 
 }
