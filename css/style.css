@@ -1,8 +1,8 @@
     * {
         margin: 0;
         padding: 0;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
+        /* -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box; */
         box-sizing: border-box;
     }
     
@@ -20,7 +20,6 @@
         box-shadow: 5px 5px 10px #76787a;
     }
     
-    @import url('https://fonts.googleapis.com/css?family=Chilanka');
     header {
         background-color: #161616;
         color: #dfd9d9;
@@ -30,6 +29,11 @@
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+    
+    .centrar-logo a img {
+        width: 80px;
+        height: 80px;
     }
     
     .ajustarIcon {
@@ -173,7 +177,7 @@
         text-decoration: none;
     }
     
-    @media only screen and (max-width:768px) {
+    @media only screen and (max-width:992px) {
         .textoIcon {
             font-size: 1.2rem;
             margin-top: 17px;
@@ -223,6 +227,8 @@
     }
     
     .main h1 {
+        background: #850d0d;
+        color: #dfd9d9;
         font-size: 50px;
     }
     
@@ -253,7 +259,7 @@
         padding-right: 10px;
     }
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
         .post .thumb {
             width: 100%;
             margin-bottom: 20px;
