@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Sunflower:300,500,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/flexboxgrid.min.css">
     <link rel="stylesheet" href="css/style.css">
+
     <title>Proyecto Web v6</title>
 </head>
 
@@ -69,7 +70,12 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="#">¿Quienes somos?</a></li>
                     <li><a href="contacto.html">Contactanos</a></li>
+                    <li class="hidden-lg hidden-md hidden-sm"><a href="casas.html">Casas</a></li>
+                    <li class="hidden-lg hidden-md hidden-sm"><a href="departamento.html">Departamentos</a></li>
+                    <li class="hidden-lg hidden-md hidden-sm"><a href="terrenos.html">Terrenos</a></li>
+                    <li class="hidden-lg hidden-md hidden-sm"><a href="arriendos.html">Arriendos</a></li>
                     <li><a href="galeria.html">Galeria</a></li>
+
 
                 </ul>
             </nav>
@@ -150,13 +156,14 @@
                     </p>
                     <div class="contenedor-botones">
                         <a href="dpto-limache.html" class="btn btn-primary">Ver más</a>
-                        <a href="#" class="btn btn-success">Arrendar <span class="badge">$330.000</span></a>
+                        <a href="#" class="btn btn-success">Arrendar <span class="badge" id="uf-casa-index"></span></a>
+
                     </div>
                 </article>
 
                 <article class="post clearfix">
 
-                    <img class="thumb pull-left img-thumbnail" src="img/depto2.jpg" alt="">
+                    <img class="thumb pull-left img-thumbnail" src="img/casa2.jpg" alt="">
 
                     <h2 class="post-title">
                         Casa Limache
@@ -166,12 +173,13 @@
                     </p>
                     <div class="contenedor-botones">
                         <a href="casa-limache.html" class="btn btn-primary">Ver más</a>
-                        <a href="#" class="btn btn-success">Comprar <span class="badge">$205.000.000</span></a>
+                        <a href="#" class="btn btn-success">Comprar <span class="badge" id="uf-dpto-index"></span></a>
+
                     </div>
                 </article>
 
                 <article class="post clearfix">
-                    <img class="thumb pull-left img-thumbnail" src="img/depto2.jpg" alt="">
+                    <img class="thumb pull-left img-thumbnail" src="img/terr1.jpg" alt="">
 
                     <h2 class="post-title">
                         Terreno Limache
@@ -181,7 +189,8 @@
                     </p>
                     <div class="contenedor-botones">
                         <a href="terreno-limache.html" class="btn btn-primary">Ver más</a>
-                        <a href="#" class="btn btn-success">Comprar <span class="badge">$170.000.000</span></a>
+                        <a href="#" class="btn btn-success">Comprar <span class="badge" id="uf-terr-index"></span></a>
+
                     </div>
                 </article>
 
@@ -255,7 +264,7 @@
 
 
     </footer>
-
+    <script src="js/uf.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>

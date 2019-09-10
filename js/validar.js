@@ -1,64 +1,65 @@
-function validarNombre() {
+function validarFormulario() {
 
+    //Sacando valor de los campos
     var nombre = document.getElementById("nombre").value;
     var txtNombre = document.getElementById("nombre");
+    var correo = document.getElementById("mail").value;
+    var txtCorreo = document.getElementById("mail");
+    var telefono = document.getElementById("telefono").value;
+    var txtTelefono = document.getElementById("telefono");
+    var mensaje = document.getElementById("mensaje").value;
+    var txtMensaje = document.getElementById("mensaje");
 
+    //validar nombre
     if (nombre == null || nombre.length == 0 || /^\s+$/.test(nombre)) {
         alert('ERROR: El campo nombre no debe ir vacío o lleno de solamente espacios en blanco');
         txtNombre.classList.add('error');
         txtNombre.classList.remove('exito');
+        return false;
 
     } else {
         txtNombre.classList.remove('error');
         txtNombre.classList.add('exito');
 
     }
-}
 
-function validarCorreo() {
-
-    var correo = document.getElementById("mail").value;
-    var txtCorreo = document.getElementById("mail");
-
+    //validar correo
     if (correo == null || correo.length == 0 || !(/\S+@\S+\.\S+/.test(correo))) {
         alert('ERROR: Debe escribir un correo válido');
         txtCorreo.classList.add('error');
         txtCorreo.classList.remove('exito');
+        return false;
 
     } else {
         txtCorreo.classList.remove('error');
         txtCorreo.classList.add('exito');
     }
-}
 
-function validarTelefono() {
-
-    var telefono = document.getElementById("telefono").value;
-    var txtTelefono = document.getElementById("telefono");
-
+    //validar telefono
     if (telefono == null || telefono.length == 0 || isNaN(telefono)) {
         alert('ERROR: Debe escribir un numero de Telefono');
         txtTelefono.classList.add('error');
         txtTelefono.classList.remove('exito');
+        return false;
 
     } else {
         txtTelefono.classList.remove('error');
         txtTelefono.classList.add('exito');
     }
-}
 
-function validarMensaje() {
-
-    var mensaje = document.getElementById("mensaje").value;
-    var txtMensaje = document.getElementById("mensaje");
-
+    //validar mensaje
     if (mensaje == null || mensaje.length == 0) {
         alert('ERROR: Ingrese mensaje que desea enviar');
         txtMensaje.classList.add('error');
         txtMensaje.classList.remove('exito');
+        return false;
 
     } else {
         txtMensaje.classList.remove('error');
         txtMensaje.classList.add('exito');
     }
+
+    alert('CORRECTO: Enviando Formulario de Contacto...');
+    return true;
+
 }
